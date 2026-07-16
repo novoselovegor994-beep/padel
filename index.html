@@ -8,27 +8,65 @@
 </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <p class="subtitle">ТЕРРИТОРИЯ АЗХО • АСТРАХАНЬ</p>
-            <h1>ПЕРВЫЙ ПАДЕЛ-КЛУБ<br>В АСТРАХАНИ</h1>
-            <p class="description">Корт со стеклянными стенами, ракетка в руке и партнер рядом. Спорт, который уже обогнал теннис по популярности в Европе — теперь и у нас.</p>
-            <button class="cta-button">Стать резидентом клуба</button>
+    <!-- Шапка (Навигация) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">PADEL PLACE</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#about">О клубе</a>
+                <a href="#features">Что внутри</a>
+                <a href="#services">Услуги</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            
+            <button class="nav-btn">Записаться</button>
         </div>
     </header>
 
+    <!-- ПЕРВЫЙ ЭКРАН (HERO) - КАК НА МАКЕТЕ -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="subtitle-wrapper">
+                    <span class="dot"></span>
+                    <p class="subtitle">ТЕРРИТОРИЯ АЗХО • АСТРАХАНЬ</p>
+                </div>
+                
+                <h1>
+                    <span class="line">ПЕРВЫЙ</span>
+                    <span class="line accent">ПАДЕЛ-КЛУБ</span>
+                    <span class="line">В АСТРАХАНИ</span>
+                </h1>
+                
+                <p class="description">Корт со стеклянными стенами, ракетка в руке и партнер рядом. Спорт, который уже обогнал теннис по популярности в Европе — теперь и у нас.</p>
+                
+                <div class="hero-buttons">
+                    <button class="cta-button">Стать резидентом клуба</button>
+                    <button class="cta-button-outline">Что такое падел?</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ВТОРОЙ ЭКРАН (С РАМКОЙ) -->
     <section class="what-is-padel" id="about">
         <div class="container">
-            <div class="text-block">
-                <span class="number">01</span>
-                <h2>ЧТО ТАКОЕ ПАДЕЛ</h2>
-                <h3>ЛЕГКО НАЧАТЬ — НЕВОЗМОЖНО ОТОРВАТЬСЯ</h3>
-                <p>Падел — это корт со стеклянными стенами, ракетка без струн, мяч как в большом теннисе и игра всегда в паре. Мяч можно отбивать от стекла — это делает игру динамичной и простой для новичков с первой минуты.</p>
-                <p class="highlight">Именно поэтому этот вид спорта уже обогнал теннис по популярности в Европе — и мы открываем его для Астрахани</p>
-            </div>
-            <div class="image-block">
-                <!-- В реальном проекте используйте ваши изображения -->
-                <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1626224583764-87f7bcb8098a?q=80&w=1000&auto=format&fit=crop');"></div>
+            <div class="padel-box">
+                <div class="text-block">
+                    <div class="subtitle-wrapper">
+                        <span class="dot-inline"></span>
+                        <span class="number">01 • ЧТО ТАКОЕ ПАДЕЛ</span>
+                    </div>
+                    
+                    <h3>ЛЕГКО НАЧАТЬ <br>НЕВОЗМОЖНО ОТОРВАТЬСЯ</h3>
+                    
+                    <p>Падел — это корт со <strong>стеклянными стенами</strong>, ракетка без струн, мяч как в большом теннисе и игра всегда в паре. Мяч можно отбивать от стекла — это делает игру динамичной и простой для новичков с первой минуты.</p>
+                    
+                    <p class="highlight">Именно поэтому этот вид спорта уже обогнал теннис по популярности в Европе — и мы открываем его для Астрахани</p>
+                </div>
             </div>
         </div>
     </section>
@@ -66,10 +104,10 @@
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="image-wrapper">
-                <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1595436595813-154472270f98?q=80&w=1000&auto=format&fit=crop');"></div>
+                <div class="image-placeholder" style="background-image: url('images/ball-close.jpg');"></div>
             </div>
             <div class="image-wrapper">
-                <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1612216433537-6a3273bcf6e4?q=80&w=1000&auto=format&fit=crop');"></div>
+                <div class="image-placeholder" style="background-image: url('images/racket.jpg');"></div>
             </div>
         </div>
     </section>
