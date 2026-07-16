@@ -31,12 +31,12 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 0;
-    z-index: 100;
+    z-index: 1000;
     background-color: transparent;
 }
 
@@ -208,10 +208,13 @@ body {
 }
 
 .what-is-padel .container {
-    max-width: 100%;
-    margin: 0 120px;
-    padding: 0;
-    display: block;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40 px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
 .padel-box {
@@ -219,10 +222,8 @@ body {
     border-radius: 30px;
     padding: 60px 80px;
     background: rgba(255, 255, 255, 0.02);
-    position: relative;
-    max-width: 900px;
-    margin: 0;
-    margin-left: 0;
+    flex: 1;
+    min-width: 300px;
 }
 
 .text-block {
@@ -373,20 +374,40 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
-
+.padel-image-wrapper {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.padel-photo {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    object-fit: cover;
+}
 @media (max-width: 992px) {
-    .hero h1 {
-        font-size: 3.5rem;
-    }
     .nav-links {
         display: none;
     }
-}
-
-@media (max-width: 768px) {
+    
+    .what-is-padel .container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
     .padel-box {
         padding: 30px 20px;
         border-radius: 20px;
+        width: 100%;
+    }
+    .padel-photo {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
     }
     .text-block h3 {
         font-size: 2.2rem;
@@ -397,9 +418,11 @@ footer {
     .hero h1 {
         font-size: 2.5rem;
     }
+    
     .hero-container, .nav-container {
         padding: 0 20px;
     }
+    
     .hero-buttons {
         flex-direction: column;
         width: 100%;
