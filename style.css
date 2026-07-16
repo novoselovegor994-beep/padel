@@ -96,6 +96,10 @@ body {
     display: flex;
     align-items: center;
     background-color: var(--dark-green);
+    background-image: url('images/court2.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
 }
 
 .hero-container {
