@@ -35,7 +35,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 0;
+    padding: 20px 0;
     z-index: 100;
     background-color: transparent;
 }
@@ -51,11 +51,10 @@ body {
     box-sizing: border-box;
 }
 
-.logo-text {
-    font-weight: 900;
-    font-size: 1.2rem;
-    color: #fff;
-    letter-spacing: 1px;
+.logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
@@ -83,11 +82,13 @@ body {
     font-weight: bold;
     font-size: 0.95rem;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .nav-btn:hover {
     transform: scale(1.05);
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(198, 241, 53, 0.4);
 }
 
 .hero {
