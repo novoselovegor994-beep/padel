@@ -283,30 +283,35 @@ body {
 }
 
 .features-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    padding: 0 20px;
 }
 
 .feature-card {
     background: #fdfdfd;
-    padding: 20px;
+    padding: 40px 30px;
     border-radius: 15px;
     transition: all 0.4s ease;
     border: 1px solid rgba(255, 255, 255, 0.05);
     text-align: center;
     color: var(--dark-green);
+    width: 350px;
+    flex-shrink: 0;
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.1);
+    background: #fff;
     border-color: var(--light-green);
 }
 
 .feature-number {
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--accent-green);
     opacity: 0.7;
     margin-bottom: 10px;
@@ -318,7 +323,7 @@ body {
 }
 
 .feature-card p {
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     opacity: 0.8;
 }
 
@@ -432,5 +437,57 @@ footer {
     .cta-button, .cta-button-outline {
         width: 100%;
         text-align: center;
+    }
+}
+.tennis-ball {
+    position: absolute;
+    width: 350px;        /* Размер мячика. Если надо больше/меньше - поменяйте это число */
+    height: auto;
+    z-index: 10;        /* Чтобы были поверх фона */
+    pointer-events: none; /* Чтобы при клике мышкой мячи не мешали нажимать на текст */
+}
+
+
+.features-grid {
+    position: relative; 
+}
+
+.ball-top-right {
+    top: -90px;      /* Сдвиг вверх */
+    right: 550px;    /* Сдвиг вправо */
+    transform: rotate(15deg); /* Легкий поворот для живости */
+    width: 120px;
+}
+
+.ball-middle-right {
+    bottom: 8%;     /* По высоте ровно между 2 и 3 карточкой */
+    right: 100px;    /* Вылезает справа */
+    transform: rotate(-20deg);
+    width: 350px;
+}
+
+.ball-bottom-left {
+    bottom: -75px;   /* Снизу */
+    left: -100px;     /* Слева */
+    transform: rotate(45deg);
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+
+    .tennis-ball {
+        width: 50px;
+    }
+    .ball-top-right {
+        top: -20px;
+        right: -10px;
+    }
+    .ball-middle-right {
+        right: -20px;
+        bottom: 50%;
+    }
+    .ball-bottom-left {
+        bottom: -20px;
+        left: -10px;
     }
 }
